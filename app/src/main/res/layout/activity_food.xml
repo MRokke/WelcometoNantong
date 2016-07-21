@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.admin.welcometonantong.FoodActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Special Food"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vicetitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="--What and Where to eat in Nantong"
+            android:textAlignment="textEnd"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/LD1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="8dp"
+            android:text="Local Delicacy 1"
+            android:textSize="26sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="@color/LD" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/wenha1"
+            android:scaleType="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/food1"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Local Delicacy 2"
+            android:paddingLeft="8dp"
+            android:textSize="26sp"
+            android:id="@+id/LD2"
+            android:layout_marginTop="16dp"
+            android:background="@color/LD"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/wenfeng"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/food2"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textView5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/button2"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="back"
+            android:textAllCaps="false"
+            android:background="@color/button"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+</ScrollView>

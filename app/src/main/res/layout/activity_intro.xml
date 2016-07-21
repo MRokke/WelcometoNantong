@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/vicebackground">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.admin.welcometonantong.IntroActivity">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introduction"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:scaleType="fitStart"
+            android:paddingTop="26dp"
+            android:src="@drawable/map" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Location of Nantong City jurisdiction in Jiangsu"
+            android:id="@+id/textView3"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:text="@string/nihao"/>
+           //
+            //android:text="Nantong (Chinese: 南通) is a prefecture-level city in Jiangsu province, China. Located on the northern bank of the Yangtze River, near the river mouth. Nantong is a vital river port bordering Yancheng to the north, Taizhou to the west, Suzhou and Shanghai to the south across the river, and the East China Sea to the east. Its current population is 7,282,835 at the 2010 census, 1,994,708 of whom live in the built-up area made up of three urban districts."
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="For Details"
+                android:layout_weight="1"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:id="@+id/button5"
+                android:textAllCaps="false"
+                android:onClick="gotowiki"
+                android:background="@color/button"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:id="@+id/button"
+                android:onClick="back"
+                android:background="@color/button"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
